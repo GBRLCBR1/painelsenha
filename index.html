@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo Responsivo</title>
+  <style>
+    /* O contêiner do vídeo irá ajustar a largura de acordo com a tela */
+    .video-container {
+      width: 100vw;
+      height: 56.25vw;
+      max-width: 177.78vh;
+      max-height: 100vh;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* O vídeo ocupará toda a largura do contêiner e ajustará a altura proporcionalmente */
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video autoplay loop muted playsinline>
+      <source src="midia\TV VEROS.mp4" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+  </div>
+
+</body>
+</html>
